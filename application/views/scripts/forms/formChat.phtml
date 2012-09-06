@@ -1,0 +1,13 @@
+<form
+	class="<?php echo $this->escape($this->element->getAttrib('class')); ?>"
+	id="<?php echo $this->escape($this->element->getAttrib('id')); ?>"
+	action="<?php echo $this->escape($this->element->getAction()); ?>"
+	method="<?php echo $this->escape($this->element->getMethod()); ?>"
+	name="<?php echo $this->escape($this->element->getAttrib('name')); ?>">
+	
+	<label for="<?php echo $this->element->message->getName();?>">
+	    <?php echo $this->element->message->getLabel();?>
+	</label>
+	<?php echo $this->element->message;?>
+	<?php echo $this->element->submit;?>
+</form>

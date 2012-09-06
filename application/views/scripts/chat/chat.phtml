@@ -1,0 +1,7 @@
+<a href="<?php echo $this->url(array('action' => 'logout')); ?>">Logout</a>
+<?php 
+echo $this->form;
+//Zend_Debug::dump($this->arrayMessage, 'messaggi');
+foreach ($this->entries as $messag){
+ echo '< '. $messag['name'] .' > '.$messag['message'].'</br>';
+}
